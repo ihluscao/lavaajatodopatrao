@@ -1,0 +1,704 @@
+/* estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0C2CA4;
+    background-color: #ffffff;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #0C2CA4;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFE86D;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* submenu */
+.login-menu {
+    margin-left: 12px;
+}
+
+.login-button {
+    display: inline-block;
+    background-color: #FFE86D;
+    color: #0C2CA4;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ff00002c;
+    transform: scale(1.05);
+}
+
+/* estilo submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00186d;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-menu:hover .submenu {
+    display: block;
+}
+
+/* posição do submenu */
+.login-menu:hover .submenu {
+    display: block;
+    right: 0; 
+    left: auto; 
+}
+
+.submenu li {
+    width: 200px; 
+}
+
+
+.submenu li {
+    width: 200px; 
+}
+
+.submenu li a {
+    display: block;
+    padding: 5px 10px;
+    color: #FFE86D;
+    background-color: #0C2CA4;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 13px;
+}
+
+.submenu li a:hover {
+    background-color: #0A237A;
+}
+
+/* principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+/* img inicio */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* serviços */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.service-box {
+    background-color: #FFE86D;
+    color: #0C2CA4;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 32px);
+    margin-bottom: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.218);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box img {
+    max-width: 85%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-note {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+
+
+/* botão de agendamento */
+.schedule-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.schedule-button a {
+    display: inline-block;
+    background-color: #FFE86D;
+    color: #0C2CA4;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.schedule-button a:hover {
+    background-color: #ff00002c;
+    transform: scale(1.05);
+}
+
+/* sobre */
+.values {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.value-box {
+    background-color: #FFE86D;
+    color: #0C2CA4;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.218);
+    transition: transform 0.3s;
+}
+
+.value-box:hover {
+    transform: scale(1.05);
+}
+
+.value-box .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.value-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.value-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ofertas do mês */
+.offers {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.offers h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offer-box {
+    background-color: #FFE86D;
+    color: #0C2CA4;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(25% - 16px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.218);
+    transition: transform 0.3s;
+}
+
+.offer-box:hover {
+    transform: scale(1.05);
+}
+
+.offer-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.offer-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.offer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* login */
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #666;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background-color: #0C2CA4;
+    color: #FFE86D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+.login-links {
+    margin-top: 20px;
+}
+
+.login-links a {
+    color: #0C2CA4;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* cadastro */
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #666;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background-color: #0C2CA4;
+    color: #FFE86D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+/* agendamento */
+.agendamento-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.agendamento-container h2 {
+    margin-bottom: 20px;
+}
+
+.tipo-veiculo {
+    margin-bottom: 20px;
+}
+
+.tipo-veiculo label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.tipo-veiculo select {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.tabela-servicos {
+    text-align: left;
+}
+
+.tabela-servicos h3 {
+    margin-bottom: 10px;
+}
+
+.categoria {
+    margin-bottom: 15px;
+}
+
+.categoria h4 {
+    margin-bottom: 5px;
+}
+
+.categoria label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.carrinho {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.carrinho h3 {
+    margin-bottom: 10px;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carrinho ul li {
+    margin-bottom: 5px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #0C2CA4;
+    color: #FFE86D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+/* detalhes do agendamento */
+.agendamento-detalhes {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.agendamento-detalhes input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.agendamento-detalhes button {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffe96da3; 
+    color: #0C2CA4;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.logo-section img {
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-section h3 {
+    margin-top: 0;
+}
+
+.contact-section p {
+    margin: 5px 0;
+}
+
+.app-section p {
+    margin: 10px 0;
+}
+
+.app-section img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-bottom {
+    background-color: #0C2CA4;
+    padding: 10px 0;
+    color: #FFE86D;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: #FFE86D;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+/* seção de depoimentos */
+.reviews {
+    padding: 40px 250px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #FFE86D;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    max-width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-weight: bold;
+}
+
+.review-rating {
+    color: #0C2CA4;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0C2CA4;
+}
+
+.review-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.review-login p {
+    font-size: 18px;
+    color: #0C2CA4;
+}
+
+.review-login a {
+    color: #0A237A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.review-login a:hover {
+    text-decoration: underline;
+}
