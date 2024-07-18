@@ -1,6 +1,6 @@
 # Lava a Jato do Patrão
 
-Sistema de gestão para lava-jatos.
+Sistema de gestão para estéticas automotivas.
 
 ## Recursos
 
@@ -14,5 +14,5 @@ Sistema de gestão para lava-jatos.
 - Cadastro de clientes
 
 
-##Como utilizar
-sistema web que pode ser acessado de qualquer dispositivo
+## Como utilizar
+Este sistema faz parte de um sistema integrado mobile e web, o repositório atual é referente ao sistema web voltado pra parte admnistrativa que irá fazer a gestão do mesmo.
