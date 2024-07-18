@@ -14,17 +14,17 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="depoimentos.html">Depoimentos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="servicos.php">Serviços</a></li>
+                <li><a href="depoimentos.php">Depoimentos</a></li>
+                <li><a href="contato.php">Contato</a></li>
                 <li class="login-menu">
-                    <a href="login.html" class="login-button">Login</a>
+                    <a href="login.php" class="login-button">Login</a>
                     <ul class="submenu">
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>
-                        <li><a href="admin.html">Administrador</a></li>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a href="cadastro.php">Cadastre-se</a></li>
+                        <li><a href="admin.php">Administrador</a></li>
                     </ul>
                 </li>
             </ul>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 Lava Jato do Patrão – <a href="politica.html">Política de Privacidade</a></p>
+            <p>© 2024 Lava Jato do Patrão – <a href="politica.php">Política de Privacidade</a></p>
         </div>
     </footer>
 </body>

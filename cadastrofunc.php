@@ -14,12 +14,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="cadastrofunc.html">Cadastrar</a></li>
-                <li><a href="estoque.html">Estoque</a></li>
-                <li><a href="agendados.html">Agendamentos</a></li>
-                <li><a href="faturamento.html">Faturamento</a></li>
+                <li><a href="cadastrofunc.php">Cadastrar</a></li>
+                <li><a href="estoque.php">Estoque</a></li>
+                <li><a href="agendados.php">Agendamentos</a></li>
+                <li><a href="faturamento.php">Faturamento</a></li>
                 <li class="login-menu">
-                    <a href="index.html" class="login-button">Sair</a>
+                    <a href="index.php" class="login-button">Sair</a>
         
                     </ul>
                 </li>
@@ -30,7 +30,7 @@
     <main>
         <div class="login-container">
             <h2>Cadastro de Funcionário</h2>
-            <form action="cadastro.html" method="post">
+            <form action="cadastro.php" method="post">
                 <div class="input-group">
                     <i class="fas fa-user"></i>
                     <input type="text" name="fullname" placeholder="Nome Completo" required>
