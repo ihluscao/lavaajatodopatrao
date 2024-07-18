@@ -14,10 +14,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="servicos.php">Serviços</a></li>
+                <li><a href="depoimentos.php">Depoimentos</a></li>
                 <li class="login-menu">
                     <a href="login.html" class="login-button">Login</a>
                     <ul class="submenu">
